@@ -1,5 +1,6 @@
 'use client';
 import { Home, Users, Briefcase, Heart, Activity, Car, GraduationCap, Smile, LucideIcon } from 'lucide-react';
+import Link from 'next/link';
 import { Card } from './ui/card';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -9,9 +10,10 @@ interface ServiceCardProps {
   title: string;
   description: string;
   color: string;
+  slug: string;
 }
 
-function ServiceCard({ icon: Icon, title, description, color }: ServiceCardProps) {
+function ServiceCard({ icon: Icon, title, description, color, slug }: ServiceCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (
@@ -57,8 +59,8 @@ function ServiceCard({ icon: Icon, title, description, color }: ServiceCardProps
             </p>
 
             <div className="pt-4">
-              <a
-                href="#"
+              <Link
+                href={`/services/${slug}`}
                 className="group/link relative inline-flex items-center gap-2 bg-[#6a2875] text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-[#6a2875]/20 hover:shadow-[#6a2875]/40 hover:-translate-y-0.5 transition-all duration-300"
               >
                 Learn More
@@ -68,7 +70,7 @@ function ServiceCard({ icon: Icon, title, description, color }: ServiceCardProps
                 >
                   →
                 </motion.span>
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -87,12 +89,14 @@ export function Services() {
       title: 'Daily Living Support',
       description: 'Assistance with everyday activities including personal care, meal preparation, and household tasks.',
       color: 'from-blue-500 to-blue-600',
+      slug: 'daily-living-support',
     },
     {
       icon: Users,
       title: 'Community Access',
       description: 'Support to engage with your community, participate in social activities, and build meaningful connections.',
       color: 'from-indigo-500 to-indigo-600',
+      slug: 'community-access',
     },
     // {
     //   icon: Briefcase,
@@ -105,6 +109,7 @@ export function Services() {
       title: 'Respite Care',
       description: 'Short-term care services giving families and carers a break while ensuring quality support continues.',
       color: 'from-pink-500 to-pink-600',
+      slug: 'respite-care',
     },
     // {
     //   icon: Activity,
@@ -117,6 +122,7 @@ export function Services() {
       title: 'Transport Assistance',
       description: 'Support with transportation to appointments, work, social events, and community activities.',
       color: 'from-orange-500 to-orange-600',
+      slug: 'transport-assistance',
     },
     // {
     //   icon: GraduationCap,
@@ -129,6 +135,7 @@ export function Services() {
       title: 'Social & Recreation',
       description: 'Fun and engaging activities designed to promote wellbeing, friendship, and community participation.',
       color: 'from-green-500 to-green-600',
+      slug: 'social-recreation',
     },
   ];
 

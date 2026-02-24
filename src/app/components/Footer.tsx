@@ -8,21 +8,20 @@ import ndisLogo from '../../assets/1-love-ndis.webp';
 
 export function Footer() {
   const quickLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About Us', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Our Process', href: '#process' },
-    { name: 'Team', href: '#team' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/#home' },
+    { name: 'About Us', href: '/#about' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Our Process', href: '/#process' },
+    { name: 'Team', href: '/#team' },
+    { name: 'Contact', href: '/#contact' },
   ];
 
   const services = [
-    'Daily Living Support',
-    'Community Access',
-    'Employment Support',
-    'Respite Care',
-    'Therapy & Allied Health',
-    'Transport Assistance',
+    { name: 'Daily Living Support', href: '/services/daily-living-support' },
+    { name: 'Community Access', href: '/services/community-access' },
+    { name: 'Respite Care', href: '/services/respite-care' },
+    { name: 'Transport Assistance', href: '/services/transport-assistance' },
+    { name: 'Social & Recreation', href: '/services/social-recreation' },
   ];
 
   return (
@@ -77,13 +76,13 @@ export function Footer() {
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm hover:text-[#ff9500] transition-colors flex items-center gap-2 group"
                   >
                     <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     <span>{link.name}</span>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -95,13 +94,13 @@ export function Footer() {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a
-                    href="#services"
+                  <Link
+                    href={service.href}
                     className="text-sm hover:text-[#ff9500] transition-colors flex items-center gap-2 group"
                   >
                     <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    <span>{service}</span>
-                  </a>
+                    <span>{service.name}</span>
+                  </Link>
                 </li>
               ))}
             </ul>
