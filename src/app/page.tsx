@@ -3,7 +3,7 @@ import { Banner1 } from './components/Banner1';
 import { About } from './components/About';
 import { Services } from './components/Services';
 import { Process } from './components/Process';
-import { Team } from './components/Team';
+// import { Team } from './components/Team';
 import { Contact } from './components/Contact';
 import { Cta } from './components/Cta';
 import { Footer } from './components/Footer';
@@ -18,7 +18,7 @@ export default function Home() {
                 <About />
                 <Services />
                 <Process />
-                <Team />
+                {/* <Team /> */}
                 <Contact />
                 <Cta />
             </main>

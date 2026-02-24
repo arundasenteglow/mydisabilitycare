@@ -84,7 +84,7 @@ export function About() {
 
             <p className="text-gray-600 leading-relaxed">
               My Disability Care is a leading provider of disability support services committed to
-              empowering individuals to live their best lives. We believe in person-centered care
+              empowering individuals to live their best lives. We believe in person-centred care
               that respects individual choices, promotes independence, and builds strong communities.
             </p>
 

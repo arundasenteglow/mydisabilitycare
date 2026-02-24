@@ -17,7 +17,7 @@ const slides = [
     title: 'Empowering Lives Through Quality Care',
     description: 'We provide comprehensive disability care services tailored to your unique needs. Our dedicated team is committed to helping you live a fulfilling and independent life.',
     points: [
-      'Personalized care plans designed for you',
+      'Personalised care plans designed for you',
       'Experienced and compassionate support workers',
       'NDIS registered provider'
     ]

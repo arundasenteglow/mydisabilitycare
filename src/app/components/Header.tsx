@@ -15,7 +15,7 @@ export function Header() {
     { name: 'About Us', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Our Process', href: '#process' },
-    { name: 'Team', href: '#team' },
+    // { name: 'Team', href: '#team' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -92,9 +92,9 @@ export function Header() {
                 {link.name}
               </Link>
             ))}
-            <Button className="w-full bg-[#6a2875] hover:bg-[#1e3a8a] text-white mt-4">
+            {/* <Button className="w-full bg-[#6a2875] hover:bg-[#1e3a8a] text-white mt-4">
               Get Started
-            </Button>
+            </Button> */}
           </nav>
         )}
       </div>

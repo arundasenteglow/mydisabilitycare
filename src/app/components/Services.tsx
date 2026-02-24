@@ -94,36 +94,36 @@ export function Services() {
       description: 'Support to engage with your community, participate in social activities, and build meaningful connections.',
       color: 'from-indigo-500 to-indigo-600',
     },
-    {
-      icon: Briefcase,
-      title: 'Employment Support',
-      description: 'Assistance in finding and maintaining employment, including skill development and workplace support.',
-      color: 'from-purple-500 to-purple-600',
-    },
+    // {
+    //   icon: Briefcase,
+    //   title: 'Employment Support',
+    //   description: 'Assistance in finding and maintaining employment, including skill development and workplace support.',
+    //   color: 'from-purple-500 to-purple-600',
+    // },
     {
       icon: Heart,
       title: 'Respite Care',
       description: 'Short-term care services giving families and carers a break while ensuring quality support continues.',
       color: 'from-pink-500 to-pink-600',
     },
-    {
-      icon: Activity,
-      title: 'Therapy & Allied Health',
-      description: 'Access to physiotherapy, occupational therapy, speech pathology, and other allied health services.',
-      color: 'from-red-500 to-red-600',
-    },
+    // {
+    //   icon: Activity,
+    //   title: 'Therapy & Allied Health',
+    //   description: 'Access to physiotherapy, occupational therapy, speech pathology, and other allied health services.',
+    //   color: 'from-red-500 to-red-600',
+    // },
     {
       icon: Car,
       title: 'Transport Assistance',
       description: 'Support with transportation to appointments, work, social events, and community activities.',
       color: 'from-orange-500 to-orange-600',
     },
-    {
-      icon: GraduationCap,
-      title: 'Skills Development',
-      description: 'Programs to develop life skills, independence, and capabilities for greater autonomy.',
-      color: 'from-yellow-500 to-yellow-600',
-    },
+    // {
+    //   icon: GraduationCap,
+    //   title: 'Skills Development',
+    //   description: 'Programs to develop life skills, independence, and capabilities for greater autonomy.',
+    //   color: 'from-yellow-500 to-yellow-600',
+    // },
     {
       icon: Smile,
       title: 'Social & Recreation',
@@ -145,12 +145,12 @@ export function Services() {
           </h2>
           <p className="mt-6 text-lg text-gray-600 leading-relaxed font-medium">
             Comprehensive disability support services designed to empower you to live independently
-            and achieve your goals. Our person-centered approach ensures care that's tailored to your unique needs.
+            and achieve your goals. Our person-centred approach ensures care that's tailored to your unique needs.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -172,7 +172,7 @@ export function Services() {
           className="text-center mt-20 p-8 rounded-3xl bg-white shadow-xl shadow-blue-500/5 border border-blue-50"
         >
           <p className="text-gray-600 mb-6 font-medium text-lg">
-            Don't see what you're looking for? We offer customized support plans.
+            Don't see what you're looking for? We offer customised support plans.
           </p>
           <a
             href="#contact"

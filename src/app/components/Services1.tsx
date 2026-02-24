@@ -66,7 +66,7 @@ export function Services1() {
           </h2>
           <p className="mt-4 text-gray-600 leading-relaxed">
             Comprehensive disability support services designed to empower you to live independently
-            and achieve your goals. Our person-centered approach ensures care that's tailored to your unique needs.
+            and achieve your goals. Our person-centred approach ensures care that's tailored to your unique needs.
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export function Services1() {
         {/* Bottom CTA */}
         <div className="text-center mt-12">
           <p className="text-gray-600 mb-4">
-            Don't see what you're looking for? We offer customized support plans.
+            Don't see what you're looking for? We offer customised support plans.
           </p>
           <a
             href="#contact"

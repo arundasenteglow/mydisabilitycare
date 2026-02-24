@@ -16,7 +16,14 @@ import bannerImg5 from '../../assets/accessible-housing.png';
 import bannerImg6 from '../../assets/istockphoto-858352780-2048x2048.webp';
 import bannerImg7 from '../../assets/istockphoto-1384244735-2048x2048.webp';
 import bannerImg8 from '../../assets/istockphoto-492892834-2048x2048.webp';
-
+// import bannerImg1 from '../../assets/banner/mdc-bnr-1.png';
+// import bannerImg2 from '../../assets/banner/mdc-bnr-2.png';
+// import bannerImg3 from '../../assets/banner/mdc-bnr-3.png';
+// import bannerImg4 from '../../assets/banner/mdc-bnr-4.png';
+// import bannerImg5 from '../../assets/banner/mdc-bnr-5.png';
+// import bannerImg6 from '../../assets/banner/mdc-bnr-3.png';
+// import bannerImg7 from '../../assets/banner/mdc-bnr-4.png';
+// import bannerImg8 from '../../assets/banner/mdc-bnr-5.png';
 
 
 const slides = [
@@ -26,7 +33,7 @@ const slides = [
         title: 'Empowering Lives Through Quality Care',
         description: 'We provide comprehensive disability care services tailored to your unique needs. Our dedicated team is committed to helping you live a fulfilling and independent life.',
         points: [
-            'Personalized care plans designed for you',
+            'Personalised care plans designed for you',
             'Experienced and compassionate support workers',
             'NDIS registered provider'
         ]

@@ -13,7 +13,7 @@ export function Process() {
       number: '02',
       icon: UserCheck,
       title: 'Assessment & Planning',
-      description: 'We conduct a thorough assessment and work with you to create a personalized care plan.',
+      description: 'We conduct a thorough assessment and work with you to create a personalised care plan.',
       color: 'bg-indigo-500',
     },
     {

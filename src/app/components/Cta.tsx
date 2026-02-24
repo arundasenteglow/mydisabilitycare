@@ -36,7 +36,7 @@ export function Cta() {
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-6 h-6 text-white flex-shrink-0" />
-                <span className="text-blue-50">Personalized care plans tailored to your needs</span>
+                <span className="text-blue-50">Personalised care plans tailored to your needs</span>
               </div>
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-6 h-6 text-white flex-shrink-0" />
