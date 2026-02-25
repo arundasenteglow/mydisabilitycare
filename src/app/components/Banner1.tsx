@@ -2,6 +2,7 @@
 
 import { ArrowRight, CheckCircle, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from './ui/button';
+import Link from 'next/link';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { useCallback, useEffect, useState } from 'react';
@@ -173,7 +174,7 @@ export function Banner1() {
                                                 )}
                                             </motion.h1>
 
-                                            {/* <motion.p variants={itemVariants} className="text-xl text-gray-200 leading-relaxed">
+                                            <motion.p variants={itemVariants} className="text-xl text-gray-200 leading-relaxed">
                                                 {slide.description}
                                             </motion.p>
 
@@ -187,14 +188,18 @@ export function Banner1() {
                                             </motion.div>
 
                                             <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-4">
-                                                <Button className="bg-[#6a2875] hover:bg-white hover:text-[#6a2875] text-white px-8 py-6 text-lg transition-all">
-                                                    Get Started Today
-                                                    <ArrowRight className="ml-2 w-5 h-5" />
-                                                </Button>
-                                                <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg transition-all">
-                                                    Learn More
-                                                </Button>
-                                            </motion.div> */}
+                                                <Link href="/contact" passHref>
+                                                    <Button className="bg-[#6a2875] hover:bg-white hover:text-[#6a2875] text-white px-8 py-6 text-lg transition-all">
+                                                        Get Started Today
+                                                        <ArrowRight className="ml-2 w-5 h-5" />
+                                                    </Button>
+                                                </Link>
+                                                <Link href="/about" passHref>
+                                                    <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg transition-all">
+                                                        Learn More
+                                                    </Button>
+                                                </Link>
+                                            </motion.div>
                                         </motion.div>
                                     )}
                                 </AnimatePresence>

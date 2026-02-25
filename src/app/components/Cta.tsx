@@ -1,5 +1,6 @@
 import { Phone, Mail, ArrowRight, CheckCircle } from 'lucide-react';
 import { Button } from './ui/button';
+import Link from 'next/link';
 
 export function Cta() {
   return (
@@ -49,13 +50,17 @@ export function Cta() {
             </div>
 
             <div className="flex flex-wrap gap-4 pt-4">
-              <Button className="bg-white text-[#6a2875] hover:bg-blue-50 px-8 py-6 text-lg shadow-xl">
-                Get Started Now
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button variant="outline" className="border-2 border-white text-black hover:bg-white/10 px-8 py-6 text-lg">
-                Learn More
-              </Button>
+              <Link href="/contact" passHref>
+                <Button className="bg-white text-[#6a2875] hover:bg-blue-50 px-8 py-6 text-lg shadow-xl">
+                  Get Started Now
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <Link href="/about" passHref>
+                <Button variant="outline" className="border-2 border-white text-black hover:bg-white/10 px-8 py-6 text-lg">
+                  Learn More
+                </Button>
+              </Link>
             </div>
           </div>
 

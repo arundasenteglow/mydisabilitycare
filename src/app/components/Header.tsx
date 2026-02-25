@@ -12,8 +12,8 @@ export function Header() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const navLinks = [
-    { name: 'Home', href: '/#home' },
-    { name: 'About Us', href: '/#about' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
     {
       name: 'Services',
       href: '/services',
@@ -25,9 +25,9 @@ export function Header() {
         { name: 'Social & Recreation', href: '/services/social-recreation' },
       ]
     },
-    { name: 'Our Process', href: '/#process' },
+    { name: 'Our Process', href: '/process' },
     // { name: 'Team', href: '/#team' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -56,7 +56,7 @@ export function Header() {
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="#home" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <Image src={logo} alt="My Disability Care" width={200} height={64} className="h-16 w-auto" />
             </Link>
           </div>

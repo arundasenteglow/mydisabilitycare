@@ -1,4 +1,5 @@
 import { FileText, UserCheck, ClipboardList, Rocket } from 'lucide-react';
+import Link from 'next/link';
 
 export function Process() {
   const steps = [
@@ -132,12 +133,12 @@ export function Process() {
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 inline-block">
             <h3 className="font-bold text-gray-900 mb-2">Ready to Get Started?</h3>
             <p className="text-gray-600 mb-4">Contact us today for a free consultation</p>
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="inline-flex items-center gap-2 bg-[#6a2875] hover:bg-[#1e3a8a] text-white px-8 py-3 rounded-lg font-semibold transition-colors"
             >
               Schedule Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </div>
