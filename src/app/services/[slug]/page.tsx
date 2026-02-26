@@ -181,7 +181,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                     <div className="container mx-auto px-4 relative z-10">
                         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
                             <Link
-                                href="/#services"
+                                href="/services"
                                 className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors group"
                             >
                                 <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
@@ -203,7 +203,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                     <div className="container mx-auto px-4 py-4 flex items-center gap-2 text-sm text-gray-500">
                         <Link href="/" className="hover:text-[#6a2875] transition-colors">Home</Link>
                         <ChevronRight className="w-4 h-4" />
-                        <Link href="/#services" className="hover:text-[#6a2875] transition-colors">Services</Link>
+                        <Link href="/services" className="hover:text-[#6a2875] transition-colors">Services</Link>
                         <ChevronRight className="w-4 h-4" />
                         <span className="text-[#6a2875] font-semibold">{service.title}</span>
                     </div>
@@ -245,7 +245,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                             <div className="space-y-12">
                                 <div className="space-y-6">
                                     <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
-                                        Detailed <span className="text-[#6a2875]">Care & Support</span>
+                                        <span className="text-[#6a2875]">{service.title}</span>
                                     </h2>
                                     <div className="space-y-4">
                                         {service.content.map((paragraph: string, idx: number) => (
@@ -275,7 +275,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                                         <p className="text-gray-600">Our team is ready to help you get started.</p>
                                     </div>
                                     <Link
-                                        href="/#contact"
+                                        href="/contact"
                                         className="bg-[#6a2875] text-white px-8 py-4 rounded-2xl font-bold hover:bg-[#1e3a8a] transition-all shadow-lg hover:-translate-y-1 flex items-center gap-2 whitespace-nowrap"
                                     >
                                         Contact Us Today

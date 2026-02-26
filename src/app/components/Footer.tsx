@@ -8,12 +8,12 @@ import ndisLogo from '../../assets/1-love-ndis.webp';
 
 export function Footer() {
   const quickLinks = [
-    { name: 'Home', href: '/#home' },
-    { name: 'About Us', href: '/#about' },
-    { name: 'Services', href: '/#services' },
-    { name: 'Our Process', href: '/#process' },
-    { name: 'Team', href: '/#team' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About Us', href: '/about' },
+    { name: 'Services', href: '/services' },
+    { name: 'Our Process', href: '/process' },
+    // { name: 'Team', href: '/#team' },
+    { name: 'Contact', href: '/contact' },
   ];
 
   const services = [
