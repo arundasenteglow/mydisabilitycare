@@ -23,6 +23,7 @@ export function Header() {
         { name: 'Respite Care', href: '/services/respite-care' },
         { name: 'Transport Assistance', href: '/services/transport-assistance' },
         { name: 'Social & Recreation', href: '/services/social-recreation' },
+        { name: 'NDIS Plan advisory services', href: '/services/ndis-plan-advisory' },
       ]
     },
     { name: 'Our Process', href: '/process' },
