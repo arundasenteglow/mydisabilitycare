@@ -195,7 +195,7 @@ export function Banner1() {
                                                     </Button>
                                                 </Link>
                                                 <Link href="/about" passHref>
-                                                    <Button variant="outline" className="border-white text-white hover:bg-white hover:text-black px-8 py-6 text-lg transition-all">
+                                                    <Button variant="outline" className="border-white bg-transparent text-white hover:bg-white hover:text-[#6a2875] px-8 py-6 text-lg transition-all">
                                                         Learn More
                                                     </Button>
                                                 </Link>

@@ -14,6 +14,7 @@ import communityAccessImg from '../../../assets/community-participation.png';
 import respiteCareImg from '../../../assets/accessible-housing.png';
 import transportImg from '../../../assets/istockphoto-1428287244-2048x2048.webp';
 import socialRecreationImg from '../../../assets/istockphoto-858352780-2048x2048.webp';
+import ndisPlanImg from '../../../assets/istockphoto-1185609641-2048x2048.webp';
 
 const SERVICES_DATA: Record<string, any> = {
     'daily-living-support': {
@@ -149,6 +150,33 @@ const SERVICES_DATA: Record<string, any> = {
             'Enhanced social and communication skills',
             'Opportunities to discover new talents',
             'Stronger social networks and friendships'
+        ]
+    },
+    'ndis-plan-advisory': {
+        title: 'NDIS Plan Advisory Services',
+        subtitle: 'Our experience, mission and Vaules.',
+        description: 'Professional support to help you understand, navigate, and maximise your NDIS plan to achieve your life goals.',
+        image: ndisPlanImg,
+        color: 'from-purple-500 to-purple-600',
+        content: [
+            'At My Plan Advisor, we believe that every NDIS participant deserves a partner they can trust. We’re not just administrators. We’re people who genuinely care about helping you get the most out of your plan, with honesty, transparency, and warmth.',
+            'Our Mission: To simplify NDIS plan management through financial expertise, technology, and genuine care – empowering participants to focus on living their best lives.',
+            'A future where every NDIS participant can access seamless support and clear guidance, ensuring their plan works for them — not the other way around.'
+        ],
+        features: [
+            'In-depth plan orientation and explanation',
+            'Budget management and tracking advice',
+            'Connecting with service providers',
+            'Support for plan reviews and renewals',
+            'Identifying community and mainstream supports',
+            'Guidance on self-management and plan management',
+            'Goal setting and achievement strategies'
+        ],
+        benefits: [
+            'Maximum value from your NDIS funding',
+            'Clear understanding of your NDIS plan',
+            'Stress-free navigation of NDIS processes',
+            'Faster access to required supports'
         ]
     }
 };

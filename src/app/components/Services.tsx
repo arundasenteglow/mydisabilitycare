@@ -1,5 +1,5 @@
 'use client';
-import { Home, Users, Briefcase, Heart, Activity, Car, GraduationCap, Smile, LucideIcon } from 'lucide-react';
+import { Home, Users, Briefcase, Heart, Activity, Car, GraduationCap, Smile, MessageSquare, LucideIcon } from 'lucide-react';
 import Link from 'next/link';
 import { Card } from './ui/card';
 import { useState } from 'react';
@@ -136,6 +136,13 @@ export function Services() {
       description: 'Fun and engaging activities designed to promote wellbeing, friendship, and community participation.',
       color: 'from-green-500 to-green-600',
       slug: 'social-recreation',
+    },
+    {
+      icon: MessageSquare,
+      title: 'NDIS Plan advisory services',
+      description: 'At My Plan Advisor, we believe that every NDIS participant deserves a partner they can trust.',
+      color: 'from-purple-500 to-purple-600',
+      slug: 'ndis-plan-advisory',
     },
   ];
 
