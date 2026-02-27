@@ -88,14 +88,14 @@ export function Services() {
       icon: Home,
       title: 'Daily Living Support',
       description: 'Assistance with everyday activities including personal care, meal preparation, and household tasks.',
-      color: 'from-blue-500 to-blue-600',
+      color: 'dark-blue',
       slug: 'daily-living-support',
     },
     {
       icon: Users,
       title: 'Community Access',
       description: 'Support to engage with your community, participate in social activities, and build meaningful connections.',
-      color: 'from-indigo-500 to-indigo-600',
+      color: 'dark-indigo',
       slug: 'community-access',
     },
     // {
@@ -108,7 +108,7 @@ export function Services() {
       icon: Heart,
       title: 'Respite Care',
       description: 'Short-term care services giving families and carers a break while ensuring quality support continues.',
-      color: 'from-pink-500 to-pink-600',
+      color: 'dark-pink',
       slug: 'respite-care',
     },
     // {
@@ -121,7 +121,7 @@ export function Services() {
       icon: Car,
       title: 'Transport Assistance',
       description: 'Support with transportation to appointments, work, social events, and community activities.',
-      color: 'from-orange-500 to-orange-600',
+      color: 'dark-orange',
       slug: 'transport-assistance',
     },
     // {
@@ -134,14 +134,14 @@ export function Services() {
       icon: Smile,
       title: 'Social & Recreation',
       description: 'Fun and engaging activities designed to promote wellbeing, friendship, and community participation.',
-      color: 'from-green-500 to-green-600',
+      color: 'dark-green',
       slug: 'social-recreation',
     },
     {
       icon: MessageSquare,
       title: 'NDIS Plan advisory services',
       description: 'At My Plan Advisor, we believe that every NDIS participant deserves a partner they can trust.',
-      color: 'from-purple-500 to-purple-600',
+      color: 'dark-purple',
       slug: 'ndis-plan-advisory',
     },
   ];

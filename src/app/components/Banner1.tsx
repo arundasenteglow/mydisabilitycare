@@ -150,7 +150,7 @@ export function Banner1() {
                             </div>
 
                             {/* Content Overlay */}
-                            <div className="relative h-full container mx-auto px-6 flex items-center">
+                            <div className="relative h-full container mx-auto px-6 flex items-center justify-center">
                                 <AnimatePresence mode="wait">
                                     {selectedIndex === index && (
                                         <motion.div
@@ -158,7 +158,7 @@ export function Banner1() {
                                             variants={containerVariants}
                                             initial="hidden"
                                             animate="visible"
-                                            className="max-w-2xl text-white space-y-6"
+                                            className="max-w-4xl text-white space-y-6 text-center flex flex-col items-center"
                                         >
                                             {/* <motion.div variants={itemVariants} className="inline-block">
                                                 <span className="bg-[#6a2875] text-white px-4 py-2 rounded-full text-sm font-medium">
@@ -178,16 +178,16 @@ export function Banner1() {
                                                 {slide.description}
                                             </motion.p>
 
-                                            <motion.div variants={itemVariants} className="grid sm:grid-cols-2 gap-4">
+                                            <motion.div variants={itemVariants} className="grid sm:grid-cols-2 gap-x-8 gap-y-4 max-w-2xl mx-auto">
                                                 {slide.points.map((point, i) => (
-                                                    <div key={i} className="flex items-center gap-3">
+                                                    <div key={i} className="flex items-center gap-3 justify-center sm:justify-start">
                                                         <CheckCircle className="w-5 h-5 text-[#6a2875] flex-shrink-0" />
-                                                        <span className="text-gray-100">{point}</span>
+                                                        <span className="text-gray-100 whitespace-nowrap">{point}</span>
                                                     </div>
                                                 ))}
                                             </motion.div>
 
-                                            <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-4">
+                                            <motion.div variants={itemVariants} className="flex flex-wrap gap-4 pt-4 justify-center">
                                                 <Link href="/contact" passHref>
                                                     <Button className="bg-[#6a2875] hover:bg-white hover:text-[#6a2875] text-white px-8 py-6 text-lg transition-all">
                                                         Get Started Today

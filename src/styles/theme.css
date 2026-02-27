@@ -184,3 +184,27 @@
     max-width: 1400px;
   }
 }
+
+.dark-blue {
+  @apply bg-blue-900 text-white;
+}
+
+.dark-indigo {
+  @apply bg-indigo-900 text-white;
+}
+
+.dark-pink {
+  @apply bg-pink-900 text-white;
+}
+
+.dark-orange {
+  @apply bg-orange-900 text-white;
+}
+
+.dark-green {
+  @apply bg-green-900 text-white;
+}
+
+.dark-purple {
+  @apply bg-purple-900 text-white;
+}
