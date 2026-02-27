@@ -1,8 +1,8 @@
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { Services } from './components/Services';
-import { FloatingActions } from './components/FloatingActions';
-import { Cta } from './components/Cta';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
+import { Services } from '../components/Services';
+import { FloatingActions } from '../components/FloatingActions';
+import { Cta } from '../components/Cta';
 
 export const metadata = {
     title: 'Our Services - My Disability Care',
