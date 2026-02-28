@@ -22,7 +22,7 @@ const SERVICES_DATA: Record<string, any> = {
         subtitle: 'Assistance with Your Day-to-Day Activities',
         description: 'Providing compassionate and professional assistance with daily living tasks to help you maintain independence in your own home.',
         image: dailyLivingImg,
-        color: 'from-blue-500 to-blue-600',
+        color: 'dark-blue',
         content: [
             'Our Daily Living Support services are designed to help you maintain your independence and quality of life in your own home. We provide personalised assistance tailored to your unique needs and preferences.',
             'Whether you need help with personal care, preparing healthy meals, or keeping your home tidy, our dedicated team is here to support you every step of the way.',
@@ -49,7 +49,7 @@ const SERVICES_DATA: Record<string, any> = {
         subtitle: 'Connecting You with Your Community',
         description: 'Support to engage with your community, participate in social activities, and build meaningful connections with others.',
         image: communityAccessImg,
-        color: 'from-indigo-500 to-indigo-600',
+        color: 'dark-indigo',
         content: [
             'Engaging with the community is vital for wellbeing and personal growth. Our Community Access services are designed to help you participate in the activities you enjoy and build lasting social connections.',
             'We support you in exploring your interests, whether it\'s joining a local sports club, attending community events, or simply enjoying a coffee at your local cafe.',
@@ -76,7 +76,7 @@ const SERVICES_DATA: Record<string, any> = {
         subtitle: 'Quality Care When You Need a Break',
         description: 'Short-term care services giving families and carers a necessary break while ensuring high-quality support continues for the participant.',
         image: respiteCareImg,
-        color: 'from-pink-500 to-pink-600',
+        color: 'dark-pink',
         content: [
             'Our Respite Care services provide a vital support system for both participants and their primary carers. We offer a safe, supportive, and engaging environment where participants can enjoy new experiences while their carers take a well-deserved break.',
             'Whether it\'s for a few hours, a day, or longer, we provide flexible respite options that cater to your specific needs and preferences.',
@@ -103,7 +103,7 @@ const SERVICES_DATA: Record<string, any> = {
         subtitle: 'Reliable Travel for Your Daily Needs',
         description: 'Safe and reliable transportation support to help you get to appointments, work, social events, and community activities.',
         image: transportImg,
-        color: 'from-orange-500 to-orange-600',
+        color: 'dark-orange',
         content: [
             'Getting where you need to go should never be a barrier to living a full and active life. Our Transport Assistance services provide safe and reliable ways for you to travel to your various commitments.',
             'We understand that navigating public transport or driving can sometimes be challenging. Our dedicated team is here to ensure you get to your destination safely and on time.',
@@ -130,7 +130,7 @@ const SERVICES_DATA: Record<string, any> = {
         subtitle: 'Fun Activities for a Fulfilling Life',
         description: 'Engaging social and recreational activities designed to promote wellbeing, friendship, and active community participation.',
         image: socialRecreationImg,
-        color: 'from-green-500 to-green-600',
+        color: 'dark-green',
         content: [
             'At My Disability Care, we believe that fun and recreation are essential components of a healthy and happy life. Our Social & Recreation programs are designed to be inclusive, engaging, and specifically tailored to your interests.',
             'Our programs offer a wide range of activities that promote physical health, mental wellbeing, and social connection. We help you discover new hobbies, develop skills, and make meaningful friendships.',
@@ -157,7 +157,7 @@ const SERVICES_DATA: Record<string, any> = {
         subtitle: 'Our experience, mission and Vaules.',
         description: 'Professional support to help you understand, navigate, and maximise your NDIS plan to achieve your life goals.',
         image: ndisPlanImg,
-        color: 'from-purple-500 to-purple-600',
+        color: 'dark-purple',
         content: [
             'At My Plan Advisor, we believe that every NDIS participant deserves a partner they can trust. We’re not just administrators. We’re people who genuinely care about helping you get the most out of your plan, with honesty, transparency, and warmth.',
             'Our Mission: To simplify NDIS plan management through financial expertise, technology, and genuine care – empowering participants to focus on living their best lives.',
@@ -225,17 +225,6 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                         </div>
                     </div>
                 </section>
-
-                {/* Breadcrumbs */}
-                <div className="bg-gray-50 border-b border-gray-100">
-                    <div className="container mx-auto px-4 py-4 flex items-center gap-2 text-sm text-gray-500">
-                        <Link href="/" className="hover:text-[#6a2875] transition-colors">Home</Link>
-                        <ChevronRight className="w-4 h-4" />
-                        <Link href="/services" className="hover:text-[#6a2875] transition-colors">Services</Link>
-                        <ChevronRight className="w-4 h-4" />
-                        <span className="text-[#6a2875] font-semibold">{service.title}</span>
-                    </div>
-                </div>
 
                 {/* Content Section */}
                 <section className="py-20 lg:py-32">
